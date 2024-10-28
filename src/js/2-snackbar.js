@@ -24,15 +24,21 @@ function handleClick(event) {
         .then((delayValue) => {
             izitoast.success({
                 title: 'Success',
-                message: `✅ Fulfilled promise in ${delayValue}ms`,
-                position: 'topCenter'
+                message: ` Fulfilled promise in ${delayValue}ms`,
+                position: 'topCenter',
+                backgroundColor: '#59a10d',
+                messageColor: '#fff',
+                titleColor: '#fff'
             })
         })
         .catch((delayValue) => {
             izitoast.error({
                 title: 'Error',
-                message: `❌ Rejected promise in ${delayValue}ms`,
-                position: 'topCenter'
+                message: ` Rejected promise in ${delayValue}ms`,
+                position: 'topCenter',
+                backgroundColor: '#ef4040',
+                messageColor: '#fff',
+                titleColor: '#fff'
             })
         })
         .finally(() => {

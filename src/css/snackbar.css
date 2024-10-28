@@ -23,8 +23,12 @@ input[type='number'] {
     width: 350px;
     height: 40px;
     border: 1px solid #808080;
-    outline: none;
     padding-left: 10px;
+}
+
+input[type='number']:focus {
+    border: 1px solid #4e75ff;
+    outline: none;
 }
 
 input[type='radio'] {
@@ -66,6 +70,20 @@ input[type='radio']:focus {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
+}
+
+.btn-form:disabled {
+    background: #cfcfcf;
+    color: #989898;
+}
+
+.btn-form:hover {
+    background: #6c8cff;
+}
+
+label {
+    display: flex;
+    gap: 8px;
 }
 
 fieldset {
